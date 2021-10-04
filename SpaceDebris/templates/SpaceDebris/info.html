@@ -1,0 +1,21 @@
+{% extends "SpaceDebris/layout.html" %}
+
+{% load static %}
+
+{% block head %}
+    <script type="text/javascript" src="{% static 'SpaceDebris/js/info.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <h1>Satellite - {{sat}}</h1>
+    
+    <h2>Orbital parameters in two-line element set (TLE) format</h2>
+    <p>{{s}}</p>
+    <p>{{t}}</p>
+    <h2>Coordinates</h2>
+    <ul>
+        <li>Longitude: {{lon}}º</li>
+        <li>Latitude: {{lat}}º</li>
+        <li>Height: {{km}} </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "SpaceDebris/layout.html" %}
+
+{% load static %}
+
+{% block head %}
+    <script type="text/javascript" src="{% static 'SpaceDebris/js/index.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="data"></div>
+    <div id="satellites">
+        <h2>Satellites</h2>
+        <ul>
+            {% for name in names %}
+            <li data-satellite="{{name}}"><button>{{name}}</button></li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+{% endblock %}
