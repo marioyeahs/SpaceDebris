@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e09bc4e7-b020-4fe2-8a0d-d4ef95eeef4c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/spaceapps10-spacedebris",
+    "appService.deploySubpath": "."
+}
